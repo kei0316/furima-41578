@@ -2,11 +2,11 @@ class ItemsController < ApplicationController
   before_action :authenticate_user!,except: [:index, :show]
 
   def index  # indexアクションを定義した
-    @items = Item.all
+   # @items = Item.all
   end
 
   def new
-   # @item = Item.new
+    @item = Item.new
   end
 
   def create
