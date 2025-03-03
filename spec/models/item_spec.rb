@@ -4,14 +4,6 @@ RSpec.describe Item, type: :model do
   before do
     @user = FactoryBot.create(:user)
     @item = FactoryBot.build(:item, user_id: @user.id)
-    # 画像ファイルのパスを指定
-    image_path = '/mnt/c/Users/adosan35/projects/furima-41578/public/images/test_image.png'
-    if File.exist?(image_path)
-      @item.image.attach(io: File.open(image_path), filename: 'test_image.png', content_type: 'image/png')
-      puts "Test image attached at: #{image_path}" # デバッグ用メッセージ
-    else
-      puts "Test Image not found at: #{image_path}"
-    end
   end
 
   describe '商品出品' do
@@ -92,6 +84,12 @@ RSpec.describe Item, type: :model do
         @item.price = '１０００'
         @item.valid?
         expect(@item.errors.full_messages).to include("Price is not a number")
+      end
+      
+      it 'ユーザー情報がない場合は登録できないこと' do
+        @item.user_id = nil
+        @item.valid?
+        expect(@item.errors.full_messages).to include("User must exist")
       end
     end
   end
