@@ -4,7 +4,7 @@ RSpec.describe OrderShippingAddress, type: :model do
   before do
     @user = FactoryBot.create(:user)
     @item = FactoryBot.create(:item)
-    @order_shipping_address = FactoryBot.build(:order_shipping_address, user_id: @user.id, item_id: @item.id, prefecture_id: 2)
+    @order_shipping_address = FactoryBot.build(:order_shipping_address, user_id: @user.id, item_id: @item.id)
   end
 
   describe '配送先の住所情報のバリデーション' do
