@@ -4,7 +4,7 @@ RSpec.describe OrderShippingAddress, type: :model do
   before do
     @user = FactoryBot.create(:user)
     @item = FactoryBot.create(:item)
-    @order_shipping_address = FactoryBot.build(:order_shipping_address, user_id: @user.id, item_id: @item.id)
+    @order_shipping_address = FactoryBot.build(:order_shipping_address, user_id: @user.id, item_id: @item.id, prefecture_id: 2)
   end
 
   describe '配送先の住所情報のバリデーション' do
@@ -38,8 +38,8 @@ RSpec.describe OrderShippingAddress, type: :model do
         expect(@order_shipping_address.errors.full_messages).to include("Prefecture can't be blank")
       end
 
-      it '都道府県が「---」では保存できない' do
-        @order_shipping_address.prefecture_id = '---'
+      it '都道府県が「1」では保存できない' do
+        @order_shipping_address.prefecture_id = 1
         @order_shipping_address.valid?
         expect(@order_shipping_address.errors.full_messages).to include("Prefecture を選択してください")
       end
