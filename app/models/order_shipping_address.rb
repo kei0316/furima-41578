@@ -7,13 +7,12 @@ class OrderShippingAddress
     validates :user_id
     validates :item_id
     validates :postal_code, format: { with: /\A\d{3}-\d{4}\z/, message: "must be in the format 123-4567" }
-    validates :prefecture_id
+    validates :prefecture_id, numericality: { other_than: 1, message: "を選択してください" }
     validates :city
     validates :address_line
     validates :phone_number, format: { with: /\A\d{10,11}\z/, message: "must be 10 to 11 digits" }
     validates :token
   end
-  validate :valid_prefecture
 
   def save
     return false unless valid?
@@ -33,13 +32,5 @@ class OrderShippingAddress
   rescue ActiveRecord::RecordInvalid => e
     errors.add(:base, e.message)
     false
-  end
-
-  private
-
-  def valid_prefecture
-    if prefecture_id.blank? || prefecture_id == '---'
-      errors.add(:prefecture_id, "を選択してください")
-    end
   end
 end
