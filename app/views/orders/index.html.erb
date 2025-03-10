@@ -28,13 +28,10 @@
       </p>
     </div>
 
-    <div id="error-messages" class="error-alert">
-      <ul id="error-list">
-        <%= render 'shared/error_messages', object: @order_shipping_address %>
-      </ul>
-    </div>
+
 
     <%= form_with model: @order_shipping_address, url: item_orders_path(@item), id: 'charge-form', class: 'transaction-form-wrap', local: true do |f| %>
+        <%= render 'shared/error_messages', model: f.object %>
       <%= f.hidden_field :item_id, value: @item.id %>
       <div class='credit-card-form'>
         <h1 class='info-input-haedline'>

@@ -13,6 +13,4 @@ class User < ApplicationRecord
   validates :last_name_kana, :first_name_kana, presence: true, format: { with: /\A[\p{katakana}\u3000ー－]+\z/, message: 'is invalid. Input full-width katakana characters' }
   validates :password, format: { with: /\A(?=.*\d)(?=.*[a-zA-Z]).*\z/, message: 'must include both letters and numbers.' }
 
-  # アイテムに関するバリデーションを追加
-  validates_associated :items
 end

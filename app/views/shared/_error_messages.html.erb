@@ -1,7 +1,7 @@
-<% if local_assigns[:object]&.errors&.any? %>
+<% if model.errors.any? %>
   <div class="error-alert">
     <ul>
-      <% local_assigns[:object].errors.full_messages.each do |message| %>
+      <% model.errors.full_messages.each do |message| %>
         <li class='error-message'><%= message %></li>
       <% end %>
     </ul>
