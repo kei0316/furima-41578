@@ -2,39 +2,38 @@ source "https://rubygems.org"
 
 ruby "3.2.0"
 
-# Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
+# Rails framework
 gem 'rails', '8.0.2'
 
 # The original asset pipeline for Rails
 gem "sprockets-rails"
 
-# Use mysql as the database for Active Record
+# Database adapter
 gem "mysql2", "~> 0.5"
 
 # Use the Puma web server
 gem "puma", ">= 5.0"
 
-# Use JavaScript with ESM import maps
+# ESM import maps
 gem "importmap-rails"
 
-# Hotwire's SPA-like page accelerator
+# Hotwire
 gem "turbo-rails"
-
-# Hotwire's modest JavaScript framework
 gem "stimulus-rails"
 
-# Build JSON APIs with ease
+# JSON API builder
 gem "jbuilder"
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+# Timezone data for Windows
 gem "tzinfo-data", platforms: %i[windows jruby]
 
-# Reduces boot times through caching
+# Faster boot times
 gem "bootsnap", require: false
 
-# Use Active Storage variants
+# Active Storage variants
 gem "image_processing", "~> 1.2"
 
+# Authentication, image processing, etc.
 gem 'devise'
 gem 'mini_magick'
 gem 'active_hash'
@@ -63,7 +62,3 @@ group :production do
   gem "pg"
   gem "unicorn", "6.1.0"
 end
-
-gem 'tzinfo-data'
-
-gem 'sprockets-rails'
