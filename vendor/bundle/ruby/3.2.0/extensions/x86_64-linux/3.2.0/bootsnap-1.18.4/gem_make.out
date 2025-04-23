@@ -1,0 +1,22 @@
+current directory: /home/adosan35/projects/furima-41578/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.18.4/ext/bootsnap
+/home/adosan35/.rbenv/versions/3.2.0/bin/ruby -I /home/adosan35/.rbenv/versions/3.2.0/lib/ruby/3.2.0 extconf.rb
+checking for fdatasync() in unistd.h... yes
+checking for whether -D_GNU_SOURCE is accepted as CPPFLAGS... yes
+checking for whether -O3 is accepted as CFLAGS... yes
+checking for whether -std=c99 is accepted as CFLAGS... yes
+creating Makefile
+
+current directory: /home/adosan35/projects/furima-41578/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.18.4/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20250424-391552-kh9x4t sitelibdir\=./.gem.20250424-391552-kh9x4t clean
+
+current directory: /home/adosan35/projects/furima-41578/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.18.4/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20250424-391552-kh9x4t sitelibdir\=./.gem.20250424-391552-kh9x4t
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /home/adosan35/projects/furima-41578/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.18.4/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20250424-391552-kh9x4t sitelibdir\=./.gem.20250424-391552-kh9x4t install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20250424-391552-kh9x4t/bootsnap
+
+current directory: /home/adosan35/projects/furima-41578/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.18.4/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20250424-391552-kh9x4t sitelibdir\=./.gem.20250424-391552-kh9x4t clean

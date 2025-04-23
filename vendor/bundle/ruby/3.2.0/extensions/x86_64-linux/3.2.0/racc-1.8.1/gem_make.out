@@ -1,0 +1,18 @@
+current directory: /home/adosan35/projects/furima-41578/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+/home/adosan35/.rbenv/versions/3.2.0/bin/ruby -I /home/adosan35/.rbenv/versions/3.2.0/lib/ruby/3.2.0 extconf.rb
+creating Makefile
+
+current directory: /home/adosan35/projects/furima-41578/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250424-391552-atll67 sitelibdir\=./.gem.20250424-391552-atll67 clean
+
+current directory: /home/adosan35/projects/furima-41578/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250424-391552-atll67 sitelibdir\=./.gem.20250424-391552-atll67
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/adosan35/projects/furima-41578/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250424-391552-atll67 sitelibdir\=./.gem.20250424-391552-atll67 install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20250424-391552-atll67/racc
+
+current directory: /home/adosan35/projects/furima-41578/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250424-391552-atll67 sitelibdir\=./.gem.20250424-391552-atll67 clean

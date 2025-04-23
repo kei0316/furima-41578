@@ -1,0 +1,19 @@
+current directory: /home/adosan35/projects/furima-41578/vendor/bundle/ruby/3.2.0/gems/debug-1.10.0/ext/debug
+/home/adosan35/.rbenv/versions/3.2.0/bin/ruby -I /home/adosan35/.rbenv/versions/3.2.0/lib/ruby/3.2.0 extconf.rb
+creating Makefile
+
+current directory: /home/adosan35/projects/furima-41578/vendor/bundle/ruby/3.2.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250424-391552-whf8ax sitelibdir\=./.gem.20250424-391552-whf8ax clean
+
+current directory: /home/adosan35/projects/furima-41578/vendor/bundle/ruby/3.2.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250424-391552-whf8ax sitelibdir\=./.gem.20250424-391552-whf8ax
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/adosan35/projects/furima-41578/vendor/bundle/ruby/3.2.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250424-391552-whf8ax sitelibdir\=./.gem.20250424-391552-whf8ax install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20250424-391552-whf8ax/debug
+
+current directory: /home/adosan35/projects/furima-41578/vendor/bundle/ruby/3.2.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250424-391552-whf8ax sitelibdir\=./.gem.20250424-391552-whf8ax clean

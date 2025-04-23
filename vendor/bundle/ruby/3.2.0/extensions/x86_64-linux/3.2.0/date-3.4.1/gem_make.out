@@ -1,0 +1,24 @@
+current directory: /home/adosan35/projects/furima-41578/vendor/bundle/ruby/3.2.0/gems/date-3.4.1/ext/date
+/home/adosan35/.rbenv/versions/3.2.0/bin/ruby -I /home/adosan35/.rbenv/versions/3.2.0/lib/ruby/3.2.0 extconf.rb
+checking for rb_category_warn()... yes
+checking for timezone in time.h with  -Werror... yes
+checking for altzone in time.h with  -Werror... no
+creating Makefile
+
+current directory: /home/adosan35/projects/furima-41578/vendor/bundle/ruby/3.2.0/gems/date-3.4.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20250424-391552-s7rv4l sitelibdir\=./.gem.20250424-391552-s7rv4l clean
+
+current directory: /home/adosan35/projects/furima-41578/vendor/bundle/ruby/3.2.0/gems/date-3.4.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20250424-391552-s7rv4l sitelibdir\=./.gem.20250424-391552-s7rv4l
+compiling date_core.c
+compiling date_parse.c
+compiling date_strftime.c
+compiling date_strptime.c
+linking shared-object date_core.so
+
+current directory: /home/adosan35/projects/furima-41578/vendor/bundle/ruby/3.2.0/gems/date-3.4.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20250424-391552-s7rv4l sitelibdir\=./.gem.20250424-391552-s7rv4l install
+/usr/bin/install -c -m 0755 date_core.so ./.gem.20250424-391552-s7rv4l
+
+current directory: /home/adosan35/projects/furima-41578/vendor/bundle/ruby/3.2.0/gems/date-3.4.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20250424-391552-s7rv4l sitelibdir\=./.gem.20250424-391552-s7rv4l clean

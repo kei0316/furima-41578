@@ -6,10 +6,10 @@ ruby "3.2.0"
 gem 'rails', '8.0.2'
 
 # The original asset pipeline for Rails
-gem "sprockets-rails"
+gem 'sprockets-rails', '~> 3.5'
 
 # Database adapter
-gem "mysql2", "~> 0.5"
+gem 'mysql2', '0.5.6'
 
 # Use the Puma web server
 gem "puma", ">= 5.0"
