@@ -68,3 +68,5 @@ group :production do
 end
 
 gem 'rack', '3.1.10'
+
+gem 'sprockets', '~> 4.0'
