@@ -411,6 +411,7 @@ DEPENDENCIES
   rspec-rails (~> 4.0.0)
   rubocop (= 1.71.2)
   selenium-webdriver
+  sprockets (~> 4.0)
   sprockets-rails (~> 3.5)
   stimulus-rails
   turbo-rails
