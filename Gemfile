@@ -65,6 +65,11 @@ end
 
 group :production do
   gem 'unicorn', '6.1.0'
+  gem 'capistrano'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano3-unicorn'
 end
 
 gem 'rack', '3.1.10'
