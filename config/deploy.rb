@@ -33,4 +33,5 @@ namespace :deploy do
   end
 end
 set :bundle_flags,
-    '--deployment --without development test --force-ruby-platform'
+    '--deployment --without development test'
+set :bundle_env_variables, { 'BUNDLE_FORCE_RUBY_PLATFORM' => 'true' }
