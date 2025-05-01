@@ -35,3 +35,6 @@ end
 set :bundle_flags,
     '--deployment --without development test'
 set :bundle_env_variables, { 'BUNDLE_FORCE_RUBY_PLATFORM' => 'true' }
+set :default_env, fetch(:default_env, {}).merge(
+  'BUNDLE_FORCE_RUBY_PLATFORM' => 'true'
+)

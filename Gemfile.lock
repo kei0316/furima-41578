@@ -137,7 +137,6 @@ GEM
     faker (3.5.1)
       i18n (>= 1.8.11, < 2)
     ffi (1.17.2)
-    ffi (1.17.2-x86_64-linux-gnu)
     globalid (1.2.1)
       activesupport (>= 6.1)
     gon (6.4.0)
@@ -211,8 +210,6 @@ GEM
     nio4r (2.7.4)
     nokogiri (1.18.8)
       mini_portile2 (~> 2.8.2)
-      racc (~> 1.4)
-    nokogiri (1.18.8-x86_64-linux-gnu)
       racc (~> 1.4)
     orm_adapter (0.5.0)
     ostruct (0.6.1)
@@ -388,7 +385,6 @@ GEM
 
 PLATFORMS
   ruby
-  x86_64-linux
 
 DEPENDENCIES
   active_hash
