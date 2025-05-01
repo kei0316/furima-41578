@@ -32,3 +32,5 @@ namespace :deploy do
     invoke 'unicorn:restart'
   end
 end
+set :bundle_flags,
+    '--deployment --without development test --force-ruby-platform'
